@@ -2156,3 +2156,4 @@ insert into article_comment (article_id, content, created_by, modified_by, creat
 Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 'Cristabel', 'Berkly', '2022-05-16 07:40:29', '2022-05-26 12:23:50');
 insert into article_comment (article_id, content, created_by, modified_by, created_at, modified_at) values (108, 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', 'Dani', 'Nanon', '2022-04-02 19:17:40', '2021-09-28 12:43:42');
 insert into article_comment (article_id, content, created_by, modified_by, created_at, modified_at) values (32, 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 'Lilas', 'Mady', '2022-02-03 02:03:14', '2022-01-24 00:28:01');
+
