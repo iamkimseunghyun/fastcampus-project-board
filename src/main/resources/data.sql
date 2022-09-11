@@ -3,18 +3,21 @@
 insert into user_account (user_id, user_password, nickname, email, memo, created_at, created_by, modified_at, modified_by)
 values ('uno', 'asdf1234', 'Uno', 'uno@mail.com', 'I am Uno.', now(), 'uno', now(), 'uno');
 
+insert into user_account (user_id, user_password, nickname, email, memo, created_at, created_by, modified_at, modified_by)
+values ('kaka', 'laaf', 'kaka', 'kaka@mail.com', 'I am kaka.', now(), 'kaka', now(), 'kaka');
+
 -- 게시글 123
 insert into article (user_account_id, title, content, hashtag, created_by, modified_by, created_at, modified_at)
-values (1, 'Curabitur gravida nisi at nibh.', 'In congue. Etiam justo. Etiam pretium iaculis justo.
+values (2, 'Curabitur gravida nisi at nibh.', 'In congue. Etiam justo. Etiam pretium iaculis justo.
 
 In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', '#569a5b', 'Horatio', 'Lamond',
         '2021-10-25 12:57:07', '2022-01-18 17:28:09');
 insert into article (user_account_id, title, content, hashtag, created_by, modified_by, created_at, modified_at)
-values (1, 'Aenean fermentum.',
+values (2, 'Aenean fermentum.',
         'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.',
         '#fe1093', 'Allx', 'Niles', '2021-09-17 02:43:32', '2022-01-25 18:43:08');
 insert into article (user_account_id, title, content, hashtag, created_by, modified_by, created_at, modified_at)
-values (1, 'Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+values (2, 'Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
 
 In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', '#8217f8',
         'Michaelina', 'Daniele', '2021-10-20 22:21:51', '2022-01-03 16:59:19');
