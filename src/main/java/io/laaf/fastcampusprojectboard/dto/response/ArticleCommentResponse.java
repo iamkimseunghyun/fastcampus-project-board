@@ -2,7 +2,6 @@ package io.laaf.fastcampusprojectboard.dto.response;
 
 import io.laaf.fastcampusprojectboard.dto.ArticleCommentDto;
 
-import java.io.Serializable;
 import java.time.LocalDateTime;
 
 public record ArticleCommentResponse(
