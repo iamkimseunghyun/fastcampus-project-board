@@ -3,7 +3,6 @@ package io.laaf.fastcampusprojectboard.domain;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-import org.apache.catalina.User;
 
 import javax.persistence.*;
 import java.util.Objects;
@@ -27,6 +26,7 @@ public class ArticleComment extends AuditingFields {
 
     @Setter
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
+    @JoinColumn(name = "userId")
     private UserAccount userAccount;
 
     @Setter
