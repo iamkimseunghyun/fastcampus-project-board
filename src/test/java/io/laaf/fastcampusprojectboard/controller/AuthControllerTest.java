@@ -1,7 +1,7 @@
 package io.laaf.fastcampusprojectboard.controller;
 
 import io.laaf.fastcampusprojectboard.config.SecurityConfig;
-import io.laaf.fastcampusprojectboard.domain.type.SearchType;
+import io.laaf.fastcampusprojectboard.domain.constant.SearchType;
 import io.laaf.fastcampusprojectboard.dto.ArticleWithCommentsDto;
 import io.laaf.fastcampusprojectboard.dto.UserAccountDto;
 import io.laaf.fastcampusprojectboard.service.ArticleService;
