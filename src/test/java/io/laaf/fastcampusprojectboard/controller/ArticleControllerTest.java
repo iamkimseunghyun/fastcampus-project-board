@@ -194,7 +194,7 @@ class ArticleControllerTest {
 
         // When & Then
         mvc.perform(
-                        post("/article/form")
+                        post("/articles/form")
                                 .contentType(MediaType.APPLICATION_FORM_URLENCODED)
                                 .content(formDataEncoder.encode(articleRequest))
                                 .with(csrf())
@@ -214,7 +214,7 @@ class ArticleControllerTest {
         given(articleService.getArticle(articleId)).willReturn(dto);
 
         // When & Then
-        mvc.perform(get("/articles" + articleId + "/form"))
+        mvc.perform(get("/articles/" + articleId + "/form"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_HTML))
                 .andExpect(view().name("articles/form"))
@@ -232,7 +232,7 @@ class ArticleControllerTest {
 
         // When & Then
         mvc.perform(
-                        post("/articles" + articleId + "/form")
+                        post("/articles/" + articleId + "/form")
                                 .contentType(MediaType.APPLICATION_FORM_URLENCODED)
                                 .content(formDataEncoder.encode(articleRequest))
                                 .with(csrf())
@@ -259,7 +259,8 @@ class ArticleControllerTest {
                                 .with(csrf())
                 )
                 .andExpect(status().is3xxRedirection())
-                .andExpect(view().name("/articles"));
+                .andExpect(view().name("redirect:/articles"))
+                .andExpect(redirectedUrl("/articles"));
         then(articleService).should().deleteArticle(articleId);
     }
 

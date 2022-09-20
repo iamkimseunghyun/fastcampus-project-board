@@ -11,15 +11,16 @@ import java.util.Map;
 
 @TestComponent
 public class FormDataEncoder {
+
     private final ObjectMapper mapper;
 
     public FormDataEncoder(ObjectMapper mapper) {
         this.mapper = mapper;
     }
 
+
     public String encode(Object obj) {
-        Map<String, String> fieldMap = mapper.convertValue(obj, new TypeReference<>() {
-        });
+        Map<String, String> fieldMap = mapper.convertValue(obj, new TypeReference<>() {});
         MultiValueMap<String, String> valueMap = new LinkedMultiValueMap<>();
         valueMap.setAll(fieldMap);
 
@@ -28,6 +29,6 @@ public class FormDataEncoder {
                 .encode()
                 .build()
                 .getQuery();
-
     }
+
 }
