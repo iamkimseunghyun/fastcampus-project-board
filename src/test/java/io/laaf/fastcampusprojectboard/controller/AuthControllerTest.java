@@ -183,7 +183,6 @@ public class AuthControllerTest {
 
     private UserAccountDto createUserAccountDto() {
         return UserAccountDto.of(
-                1L,
                 "kaka",
                 "pw",
                 "kaka@mail.com",
