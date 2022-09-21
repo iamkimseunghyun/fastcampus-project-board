@@ -14,7 +14,5 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth.anyRequest().permitAll())
                 .formLogin().and()
                 .build();
-
-
     }
 }
