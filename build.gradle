@@ -75,6 +75,6 @@ jar {
     }
 }
 
-bootJar {
-    archiveFileName = "project-board-v1.1.jar"
-}
+//bootJar {
+//    archiveFileName = "project-board-v1.1.jar"
+//}
