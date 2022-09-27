@@ -69,9 +69,12 @@ clean {
 }
 
 // Heroku 설정
-
 jar {
     manifest {
         attributes('Main-Class': 'io.laaf.fastcampusprojectboard.FastCampusProjectBoardApplication')
     }
+}
+
+bootJar {
+    archiveFileName = "project-board-v1.1.jar"
 }
